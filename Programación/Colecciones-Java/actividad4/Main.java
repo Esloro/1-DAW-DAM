@@ -21,7 +21,7 @@ public class Main {
 		menu();
 
 	}
-
+	//MÉTODO MENU CON UN SWITCH CON LAS OPCIONES QUE PUEDE ELEGIR EL USUARIO CADA UNA DESARROLLADAS DENTRO DE UN METODO
 	private static void menu() {
 		int opcion = 0;
 		try {
@@ -86,9 +86,14 @@ public class Main {
 	}
 	//MÉTODO PARA MOSTRAR LOS PRODUCTOS DEL INVENTARIO CON UN FOR EACH
 	private static void mostrarProductos() {
-		for (Producto producto : listaProductos) {
-			System.out.println("Los productos del inventario son:" + producto);
+		if(listaProductos.isEmpty()) {
+			System.out.println("La lista está vacía, no hay productos en el inventario");
+		} else {
+			for (Producto producto : listaProductos) {
+				System.out.println("Los productos del inventario son:" + producto);
+			}
 		}
+		
 		
 	}
 	//MÉTODO PARA AGREGAR NUEVOS PRODUCTOS AL INVENTARIO PIDIENDO LOS DATOS POR CONSOLA
@@ -104,8 +109,7 @@ public class Main {
 		System.out.println("El producto ha sido agregado con éxito");
 		
 	}
-	//MÉTODO QUE MUESTRA UN MENSAJE AL ELEGIR LA OPCION DE SALIR DEL PROGRAMA
-	//METODO QUE MUESTRA UN MENSAJE CON LA OPCIÓN SALIR DEL PROGRAMA
+	//MÉTODO QUE MUESTRA UN MENSAJE AL ELEGIR LA OPCION DE SALIR DEL PROGRAMA METODO QUE MUESTRA UN MENSAJE CON LA OPCIÓN SALIR DEL PROGRAMA
 		private static void salir() {
 			System.out.println("Fin del programa. Hasta pronto.");
 			}

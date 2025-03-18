@@ -39,9 +39,4 @@ public class Tareas {
 		return "Tareas [nombre=" + nombre + ", estado=" + estado + "]";
 	}
 	
-	
-	
-	
-	
-
 }

@@ -81,14 +81,14 @@ public class RegistroEstudiantes {
 				encontrado = true;
 			}
 		}
-		if (!encontrado) {
+		if (!encontrado) { //SI NO LO ENCUENTRA MUESTRA UN MENSAJE
 			System.out.println("El alumno indicado no está registrado.");
 		}
 	}
 	
 	//MÉTODO PARA MOSTRAR LOS ESTUDIANTES REGISTRADOS CON UN FOR EACH
 	private static void mostrarEstudiantes() {
-		if (listaEstudiantes.isEmpty()) {
+		if (listaEstudiantes.isEmpty()) { //.isEmpty SI ESTÁ LA LISTA VACIA
 			System.out.println("No hay estudiantes registrados");
 		} else {
 			for (Estudiantes estudiante : listaEstudiantes) {
