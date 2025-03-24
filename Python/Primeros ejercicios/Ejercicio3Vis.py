@@ -1,3 +1,5 @@
+#Realizar un programa que lea al menos cuatro valores numéricos e informar su suma, producto y promedio.
+
 num1= float (input("Introduce el primer numero "))
 num2= float (input("Introduce el segundo numero "))
 num3= float (input("Introduce el tercer numero "))

@@ -1,4 +1,4 @@
-
+#PIEDRA, PAPEL O TIJERA
 
 import random
 numero = random.randint(1, 3)  # número entre 1 y 3 incluidos

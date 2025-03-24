@@ -1,4 +1,6 @@
-#Calcula los numeros primos de n numeros, por consola me pedira un numero y con el while tenemos que mostrar lso numeros primos
+#Calcula los numeros primos de n numeros, por consola me pedira un numero y con el while tenemos que 
+# mostrar los numeros primos
+
 n =int(input("Ingrese un numero "))
 print (n)
 num=0

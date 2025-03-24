@@ -1,5 +1,6 @@
-edad=int(input("Ingrese su edad: "))
+#Clasificacion por edad, en funcion de la edad muestra un mensaje u otro
 
+edad=int(input("Ingrese su edad: "))
 
 if 0<= edad <=10:
     print(f"Es un niño, tiene  {edad} años")

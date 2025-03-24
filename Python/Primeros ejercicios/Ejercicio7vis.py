@@ -1,3 +1,5 @@
+#Comparar edades, si es mayor de 18 o no.
+
 edad=int(input("Ingrese tu edad  "))
 
 

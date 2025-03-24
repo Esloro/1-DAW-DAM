@@ -1,4 +1,6 @@
-#Escribir un programa que solicite ingresar 10 notas de alumnos y nos informe cuántos tienen notas mayores o iguales a 7 y cuántos menores.
+#Escribir un programa que solicite ingresar 10 notas de alumnos y nos informe cuántos tienen notas 
+# mayores o iguales a 7 y cuántos menores.
+
 cont=0
 cont2=0
 contnotas=0

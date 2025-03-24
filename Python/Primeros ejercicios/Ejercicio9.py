@@ -1,5 +1,5 @@
+#Se ingresa la nota de un alumno, muestra un mensaje en funcion de cada nota
 nota = int(input("Ingrese una nota: "))
-
 
 if 0<= nota <5:
     print(f"Estas suspenso, tu nota es: {nota} ")

@@ -1,3 +1,6 @@
+#Calcular el sueldo mensual de un operario conociendo la cantidad de horas trabajadas y el valor por hora.
+# Y ek IRPF
+
 horas = float (input("Introduce el numero de horas trabjadas "))
 precio = float (input("Introduce el precio de cada hora "))
 totalBruto = horas*precio

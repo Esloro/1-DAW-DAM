@@ -1,3 +1,6 @@
+#Escribir un programa en el cual se ingresen cuatro números, calcular e informar la suma 
+# de los dos primeros y el producto del tercero y el cuarto.
+
 nota1= float (input("Introduce la primera nota "))
 nota2= float (input("Introduce la segunda nota "))
 nota3= float (input("Introduce la tercera nota "))
