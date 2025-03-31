@@ -19,7 +19,7 @@ import java.util.Scanner;
 		public static Scanner sc = new Scanner(System.in);
 		public static Scanner sn = new Scanner(System.in);
 
-		// PriorityQueue PARA GESTIONAR LOS CLIENTES Y SUS TICKETS
+		// PriorityQueue PARA GESTIONAR LOS CLIENTES 
 		static PriorityQueue<Paciente> listaPacientes = new PriorityQueue <>();
 		
 		public static void main(String[] args) {
