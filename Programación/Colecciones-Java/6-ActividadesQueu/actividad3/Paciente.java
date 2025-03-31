@@ -1,7 +1,7 @@
 package actividad3;
 
 public class Paciente implements Comparable <Paciente>{
-	//ATRIBUTOS DE LA CLASE TAREA Gravedad ES UN ENUM
+	//ATRIBUTOS DE LA CLASE PACIENTE Gravedad ES UN ENUM
 	private String nombre;
 	private Gravedad gravedad;
 	
