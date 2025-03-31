@@ -20,11 +20,17 @@ public class Main {
 
 	// Queue PARA GESTIONAR LOS CLIENTES Y SUS TICKETS
 	static Deque<Cliente> listaClientes = new ArrayDeque <>();
+	
 	public static void main(String[] args) {
+		//AÑADO ALGUNOS CLIENTES PARA QUE NO EMPEICE LA COLA VACÍA CON .add
+		listaClientes.add(new Cliente ("Ricardito"));
+		listaClientes.add(new Cliente ("Juan Pedro"));
+		listaClientes.add(new Cliente ("Margarita"));
 		menu();
 		
 
 	}
+	//METODO MENÚ CON CADA UNA DE LAS OPCIONES QUE PUEDE ELEGIR EL USUARIO DESARROLLADAS EN METODOS 
 	private static void menu() {
 		int opcion = 0;
 		do {
@@ -53,25 +59,45 @@ public class Main {
 			}
 		} while (opcion != 4);
 	}
-
+	
+	//MÉTODO PARA AGREGAR NUEVOS CLIENTES A LA LISTA CON .add
 	private static void agregarCliente() {
 		System.out.println("Introduce el nombre del cliente que quieres añadir");
 		String nombre = sc.nextLine();
-		
-		listaClientes.add(new Cliente (nombre));	
+
+		listaClientes.add(new Cliente(nombre));
+		System.out.println("El cliente ha sido añadido con éxito");
+	}
+
+	// MÉTODO PARA ATENDER Y ELIMINAR AL CLIENTE EN ORDEN DE LA LISTA CON .peekFirst() muestra al primero
+	private static void eliminarCliente() {
+		if (listaClientes.isEmpty()) {
+			System.out.println("La cola está vacía, espere al siguiente cliente");
+		} else {
+
+			System.out.println("Buenos días, este es el Servicio de atencion al cliente que desea "
+					+ listaClientes.peekFirst().getNombre() + "\nHola, mi ticket es el numero "
+					+ listaClientes.getFirst().getNumeroTicket());
+			System.out
+					.println("Encantados de atenderle " + listaClientes.pop().getNombre() + " ¡Que tenga un buen día!");
+
+		}
+	}
+
+	// MÉTODO QUE MUESTRA AL CLIENTE QUE VA A SER ATENDIDO, EL PRIMERO EN LA COLA(con .peekFirst())
+	private static void mostrarCliente() {
+		if (listaClientes.isEmpty()) {
+			System.out.println("La cola está vacía, espere al siguiente cliente");
+		} else {
+			System.out.println(listaClientes.peekFirst().getNombre());
+		}
 	}
 	
-	private static void eliminarCliente() {
-		System.out.println("Buenos días, este es el Servicio de atencion al cliente que desea " + listaClientes.peekFirst().getNombre() + "\nHola, mi ticket es el numero "+ listaClientes.getFirst().getNumeroTicket());
-		
-	}
-	private static void mostrarCliente() {
-		System.out.println(listaClientes);
-		
-	}
+	//MÉTODO QUE MUESTRA UN MENSAJE CUANDO EL USUARIO ELIGE LA OPCIÓN SALIR
 	private static void salir() {
 		System.out.println("Fin del programa. Hasta pronto");
 		
 	}
 
 }
+
