@@ -1,0 +1,41 @@
+- Actividad
+    
+    Desarrollar un sistema para gestionar información de personal y estudiantes, utilizando herencia, colecciones y control de tipos de objetos.
+    
+    Clase Personal:
+    
+    - Atributos: nombre: String que representa el nombre del personal.
+    - Métodos:
+    - Constructor para inicializar el nombre.
+    - toString(): Método que devuelve la información del personal (nombre y mención de que es personal interno).
+    
+    Clase Estudiante, que hereda de Personal:
+    
+    - Atributos: asignaturas: Map<Asignatura, EstadoAsignatura> donde la clave la asignatura en si misma y el valor es un enum EstadoAsignatura (SUPERADO, CURSADO, ABANDONADO).
+    - Métodos:
+    - Constructor para inicializar el nombre y el mapa de asignaturas.
+    - anadirAsignatura(Asignatura A, EstadoAsignatura estado): Método para añadir una asignatura al mapa.
+    - borrarAsignatura
+    - mostrarAsignaturas
+    - No tendremos toString en esta clase.
+    
+    Clase Asignatura:
+    
+    - Atributos: nombre: String que representa el nombre de la asignatura, profesor: String que representa el nombre del profesor de la asignatura, creditos: int que representa los créditos de la asignatura.
+    - Métodos:
+    - Constructor para inicializar todos los atributos.
+    - toString(): Método que devuelve una representación string de la asignatura, incluyendo todos sus atributos.
+    
+    Enum EstadoAsignatura:
+    
+    - Valores: SUPERADO, CURSADO, ABANDONADO
+    
+    ***Funcionalidades del Sistema***
+    
+    Utilizar un ArrayList<Personal> para almacenar tanto objetos Personal como Estudiante. Y un menú que permitirá:
+    
+    - Añadir Personas: Permitir al usuario añadir objetos Personal o Estudiante a la colección.
+    - Eliminar Personas: Permitir al usuario eliminar personas por nombre.
+    - Añadir y eliminar asignaturas pero solo a los estudiantes.
+    - Mostrar Informacion: Si el objeto es de tipo Personal, mostrar solo el nombre y que es personal interno. Si el objeto es de tipo Estudiante, mostrar el nombre y los detalles de todas las asignaturas registradas, incluyendo el nombre, créditos y profesor.
+    - Utilizar el operador instanceof para determinar si el objeto es Personal o Estudiante antes de imprimir su información.
